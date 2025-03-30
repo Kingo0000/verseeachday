@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bible Verse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>Verse Each Day</h1>
+            <p id="current-date"></p>
+        </header>
+        
+        <main>
+            <div class="verse-container">
+                <div class="verse-content">
+                    <p id="verse-text">Loading today's verse...</p>
+                    <p id="verse-reference"></p>
+                </div>
+                <button id="new-verse-btn" title="Get a new verse">↻</button>
+            </div>
+            
+            <div class="daily-reflection">
+                <h2>Today's Reflection</h2>
+                <p id="reflection-text">Loading reflection...</p>
+            </div>
+            
+            <div class="daily-prayer">
+                <h2>Prayer</h2>
+                <p id="prayer-text">Loading prayer...</p>
+            </div>
+
+            <div class="download-options">
+                <h2>Save Today's Inspiration</h2>
+                <div class="download-buttons">
+                    <button id="download-devotional">Download Devotional</button>
+                    <button id="download-image">Download Verse Image</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <button id="share-btn">Share This Verse</button>
+            <p>May this verse bring peace to your day</p>
+        </footer>
+    </div>
+
+    <!-- Hidden canvas for image generation -->
+    <canvas id="verse-canvas" width="1200" height="630" style="display: none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
