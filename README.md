@@ -13,6 +13,7 @@ A simple, elegant web application that displays a new Bible verse each day with 
 
 ## Demo
 
+Visit [https://verseeachday.vercel.app](https://verseeachday.vercel.app) to see a live demo.
 
 ## Getting Started
 
