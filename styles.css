@@ -119,7 +119,9 @@ h2 {
 }
 
 .download-options {
+    margin: auto;
     margin-bottom: 2rem;
+
 }
 
 .download-buttons {
